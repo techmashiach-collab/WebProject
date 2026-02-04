@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SkillsForward Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <div class="logo-box">SF</div>
+            <span class="logo-text">SkillsForward</span>
+        </a>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="index.html#courses">Courses</a>
+            <a href="about.html">About Us</a>
+            <a href="index.html#graduates">Graduates</a>
+            <a href="index.html#certification">Certification</a>
+            <a href="index.html#contact">Contact</a>
+            
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn active">Login</a>
+                <a href="index.html#signup" class="signin-btn">Sign Up for Free</a>
+            </div>
+        </nav>
+        
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <section class="login-section">
+        <div class="login-container">
+            <div class="login-header">
+                <div class="login-logo">
+                    <div class="login-logo-box">SF</div>
+                    <span class="login-logo-text">SkillsForward</span>
+                </div>
+                <h1>Welcome Back</h1>
+                <p>Sign in to access your courses and continue learning</p>
+            </div>
+
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="email">Email Address <span class="req">*</span></label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password <span class="req">*</span></label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+
+                <div class="remember-forgot">
+                    <label class="remember-me">
+                        <input type="checkbox">
+                        <span class="checkbox-text">Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="login-submit-btn">Sign In</button>
+
+                <div class="divider">
+                    <span>Or continue with</span>
+                </div>
+
+                <div class="social-login">
+                    <div class="social-login-icons">
+                        <a href="#" class="social-login-icon social-google" title="Sign in with Google">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-login-icon social-facebook" title="Sign in with Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-login-icon social-twitter" title="Sign in with X (Twitter)">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-login-icon social-linkedin" title="Sign in with LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-login-icon social-telegram" title="Sign in with Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social-login-icon social-instagram" title="Sign in with Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="demo-credentials">
+                    <h4>Demo Credentials:</h4>
+                    <p><strong>Email:</strong> student@skillsforward.org</p>
+                    <p><strong>Password:</strong> demo123</p>
+                </div>
+
+                <div class="signup-link">
+                    Don't have an account? <a href="index.html#signup">Sign up for free</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Programs</h4>
+                    <a href="index.html#courses">Digital Literacy</a>
+                    <a href="index.html#courses">Basic Coding</a>
+                    <a href="index.html#courses">Job Readiness</a>
+                    <a href="index.html#certification">Certification</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Organization</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="index.html#graduates">Our Graduates</a>
+                    <a href="index.html#testimonials">Success Stories</a>
+                    <a href="#">Partners</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <a href="#">FAQ</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <a href="mailto:info@skillsforward.org">info@skillsforward.org</a>
+                    <a href="#">Nairobi, Kenya</a>
+                    <a href="#">+254 700 123 456</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p class="copyright">© 2024 SkillsForward Foundation. All rights reserved.</p>
+                <p class="tagline">Empowering youth with FREE digital skills education</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('mobile-nav-active');
+        });
+
+        // Form submission
+        document.querySelector('.login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            // Demo validation
+            if (email === 'student@skillsforward.org' && password === 'demo123') {
+                alert('Login successful! Welcome back to SkillsForward.');
+                // In a real app, you would redirect to dashboard
+                window.location.href = 'index.html';
+            } else if (email && password) {
+                alert('Login successful! Welcome back.');
+                window.location.href = 'index.html';
+            } else {
+                alert('Please enter your email and password.');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if(this.getAttribute('href') === '#') return;
+                
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    document.querySelector('.nav').classList.remove('mobile-nav-active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
